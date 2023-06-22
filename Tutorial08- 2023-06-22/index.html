@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        
+       <script>
+          window.onload=function(){
+             getMarks();
+          }
+        function getMarks(){
+          var total=0;
+          for(var i=1;i<=5;i++){
+            var mark=parseInt(window.prompt("Enter the marks "));
+            total+=mark;
+          }
+          var average=total/5;
+          document.write("Total: ",total);
+          document.write("<br/>");
+          document.write("Average : ");
+        
+          var button=document.createElement("button");
+          button.innerHTML="Grade";
+          button.onclick=function(){
+            if(average >30){
+                window.alert("Congratulations!");
+            }else{
+                window.alert("Better luck next time");
+            }
+          };
+          
+          document.body.appendChild(button);
+        }
+        </script>
+           
+    </body>
+</html>
