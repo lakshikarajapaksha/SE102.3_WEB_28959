@@ -1,0 +1,71 @@
+<html><head><title>Registration Form</title></head>
+    <body><fieldset>
+        <legend>
+        
+        <h1>Car Registration </h1></legend><center>
+        <form action="submit.php" method="post">
+            <table >
+                <tr>
+                    <td>Owner Name</td>
+                    <td><input type="text" name="OwnerName"></td>
+                </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="Email">
+                </td>
+                </tr>
+            
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" name="PhoneNumber"></td>
+                </tr>
+            <tr>
+                <td>Country</td>
+                <td><Select name="Country">
+                <option value="s">Sri Lanka</option>
+                <option value="u">UK</option>
+                <option value="d">USA</option>
+                <option value="n">New Zealand</option>
+                    </Select></td></tr>
+                
+                <tr>
+                <td>Car Model</td>
+                <td><input type="text" name="CarModel" value="CarModel"></td>
+                </tr>
+                
+                <tr>
+                <td>Manufacture</td>
+                <td><Select name="Manufacture">
+                <option value="s">Select Year</option>
+                <option value="w">2023</option>
+                <option value="d">2022</option>
+                <option value="n">2021</option>
+                <option value="a">2020</option>
+                    </Select></td></tr>
+                
+                <tr>
+                <td>Transmission</td>
+                <td><input type="radio" name="Transmission" value="manual">Manual
+                <input type="radio" name="Transmission" value="auto">Auto</td>
+                </tr>
+           
+            
+            <tr>
+                <td>Additional Details</td>
+                <td><textarea id="additional details" name="additional details" rows="4" cols="20" >
+                    </textarea>
+                </td>
+                </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="termsAndConditions" value="pop">
+                I agree to the terms and conditions</td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+            </form>
+        </center></fieldset>
+          </body>
+</html>
